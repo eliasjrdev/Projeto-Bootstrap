@@ -1,0 +1,190 @@
+body{
+    background-color:#10101E ;
+    padding-top: 90px;
+}
+
+h2{
+    color: white;
+}
+
+/* Nav */
+#navbar{
+    border-bottom: 1px solid #7a7a7a;
+    background-color: #10101E;
+}
+
+
+.navbar-brand{
+    display: flex;
+    
+}
+
+.navbar-brand img{
+    width: 70px;
+}
+
+.navbar-brand span{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+
+#hamburguer-trigger {
+    display: none;
+}
+
+#navbaritens {
+    width: 0;
+    height: 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+
+#hamburguer-menu {
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+#hamburguer-trigger:checked~#navbaritens {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    
+}
+
+#navbar .active {
+    font-weight: bold;
+    border-bottom: 2px solid #7a7a7a;
+    
+}
+
+@media (min-width: 992px) {
+    #nav-container{
+        padding: 0 40px;
+    }
+
+    #navbaritens {
+        width: auto;
+        height: auto;
+        padding: 0;
+        opacity: 1;
+    }
+
+    #navbaritens a {
+        font-size: 18px;
+        color: white;
+    }
+
+    #navbaritens a:hover {
+        color: #D4A318;
+    }
+}
+
+
+/* HERO SECTION */
+
+#hero{
+    color: white;
+}
+
+.hero-image img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+
+
+/* SOBRE */
+
+#about{
+    color: white;
+}
+
+.about-image img{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+
+
+/* Tabela profissional */
+
+#planos h2{
+    color: white;
+}
+
+
+#planos .text-start{
+    color: white;
+}
+
+/* O Bootstrap aplica cores padrão pensadas para fundo claro, como eu usei um fundo escuro nesta página, usei este css para
+customizar as cores da tabela. */
+
+.table-dark-custom {
+    --bs-table-bg: #10101E;
+    --bs-table-color: #ffffff;
+
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+    --bs-table-striped-color: #ffffff;
+
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.12);
+    --bs-table-hover-color: #ffffff;
+
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* FORMULÁRIOS */
+
+#cadastro{
+    color: white;
+}
+
+
+/* MODAL */
+
+.modal-sucesso {
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1055;
+    transition: opacity 0.3s ease;
+}
+
+#modal-sucesso-toggle:checked ~ .modal-sucesso {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-overlay {
+    cursor: pointer;
+}
+
+.modal-content-custom {
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+}
+
+
+
+
+
+
+

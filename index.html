@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pd cursos</title>
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+            <div class="container-fluid" id="nav-container">
+                <a href="#" class="navbar-brand">
+                    <img src="imgs/logo.png" alt="pd cursos logo">
+                    <span>Cursos</span>
+                </a>
+                <!-- Em virtude de ser proibido o uso de JS nesta atividade, criei um visual alternativo para abrir e fechar o menu de 
+                navegação. Para isso, usei um checkbox. O checkbox guarda um estado de "MARCADO" e "DESMARCADO" e o CSS é capaz de reagir a esses
+                estados. Assim, eu conecto um label ao checkbox através do atributo "for" e dentro do label coloco um ícone de botão hamburguer.
+                Assim, o checkbox passa a funcionar como um interruptor liga/desliga e o resto do efeito de aparecer e desaparecer o menu, é feito usando Css.-->
+                <input type="checkbox" id="hamburguer-trigger" class="menu-hamburguer">
+
+                <label for="hamburguer-trigger" class="hamburguer-icon">
+                    <i class="bi bi-list d-lg-none" id="hamburguer-menu"></i>
+                </label>
+                <div class="navbar-collapse" id="navbaritens">
+                    <ul
+                        class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-lg-row flex-column align-items-lg-center align-items-start">
+                        <li class="nav-item mx-2">
+                            <a href="#hero" class="nav-link text-secondary-color" aria-current="page">Início</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#conteudo" class="nav-link text-secondary-color">Cursos</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#form" class="nav-link text-secondary-color">Contato</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a href="dashboard.html" class="nav-link text-secondary-color">Área do aluno</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid py-5" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                    <h1 class="fw-bold mb-3">
+                        Aprenda programação do zero
+                    </h1>
+
+                    <p class="mb-4">
+                        Cursos práticos e diretos para quem está começando na área
+                        de tecnologia.
+                    </p>
+
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#conteudo" class="btn btn-primary">
+                            Ver cursos
+                        </a>
+
+                        <a href="#form" class="btn btn-outline-light">
+                            Entrar em contato
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+                    <div class="hero-image">
+                        <img src="imgs/banner.png" alt="Pessoa estudando programação" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5" id="about">
+        <div class="row align-items-center">
+
+            <div class="col-md-6 d-none d-md-block text-center about-image">
+                <img src="imgs/sobre.png" alt="Sobre a empresa" class="img-fluid rounded">
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold mb-3">
+                    Sobre nós
+                </h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ipsam aliquid, eos iste maiores
+                    id perspiciatis placeat eum distinctio. Eaque minus aut consequuntur, quos numquam dolorem
+                    laboriosam laudantium quibusdam ab?
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ipsam aliquid, eos iste maiores
+                    id perspiciatis placeat eum distinctio.
+                </p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="container" id="conteudo">
+
+        <h2 class="text-center mb-5 fw-bold">Cursos em Destaque</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">Iniciante</span>
+                        <h5 class="card-title">HTML & CSS</h5>
+                        <p class="card-text">
+                            Aprenda a criar páginas web modernas e responsivas do zero.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Novo</span>
+                        <h5 class="card-title">JavaScript básico</h5>
+                        <p class="card-text">
+                            Entenda os fundamentos da linguagem mais usada da web.
+                        </p>
+                        <a href="#" class="btn btn-outline-warning mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">Popular</span>
+                        <h5 class="card-title">Bootstrap 5</h5>
+                        <p class="card-text">
+                            Crie layouts responsivos rapidamente com Bootstrap.
+                        </p>
+                        <a href="#" class="btn btn-outline-success mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Avançado</span>
+                        <h5 class="card-title">React Básico</h5>
+                        <p class="card-text">
+                            Crie interfaces modernas utilizando componentes.
+                        </p>
+                        <a href="#" class="btn btn-outline-danger mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">Iniciante</span>
+                        <h5 class="card-title">Lógica de Programação</h5>
+                        <p class="card-text">
+                            Desenvolva o raciocínio lógico para qualquer linguagem.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">Popular</span>
+                        <h5 class="card-title">Git & GitHub</h5>
+                        <p class="card-text">
+                            Controle versões e colabore em projetos profissionais.
+                        </p>
+                        <a href="#" class="btn btn-outline-success mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Novo</span>
+                        <h5 class="card-title">SQL Básico</h5>
+                        <p class="card-text">
+                            Aprenda a consultar e manipular bancos de dados.
+                        </p>
+                        <a href="#" class="btn btn-outline-warning mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Avançado</span>
+                        <h5 class="card-title">Node.js</h5>
+                        <p class="card-text">
+                            Crie APIs e aplicações back-end com JavaScript.
+                        </p>
+                        <a href="#" class="btn btn-outline-danger mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">Iniciante</span>
+                        <h5 class="card-title">Python Básico</h5>
+                        <p class="card-text">
+                            Aprenda Python para automação e análise de dados.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">Popular</span>
+                        <h5 class="card-title">UX/UI Design</h5>
+                        <p class="card-text">
+                            Crie interfaces agradáveis e funcionais.
+                        </p>
+                        <a href="#" class="btn btn-outline-success mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Novo</span>
+                        <h5 class="card-title">Flutter Básico</h5>
+                        <p class="card-text">
+                            Desenvolva apps mobile com Flutter.
+                        </p>
+                        <a href="#" class="btn btn-outline-warning mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Avançado</span>
+                        <h5 class="card-title">Java Avançado</h5>
+                        <p class="card-text">
+                            Programação orientada a objetos e APIs.
+                        </p>
+                        <a href="#" class="btn btn-outline-danger mt-auto">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="container my-5" id="planos">
+        <h2 class="text-center fw-bold mb-5">
+            Nossos planos
+        </h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-dark-custom  align-middle text-center">
+                <thead class="table-dark ">
+                    <tr class="tr-table">
+                        <th scope="col" class="align-middle">Recursos</th>
+                        <th scope="col">
+                            Básico <br>
+                            <small class="text-muted">Grátis</small>
+                        </th>
+                        <th scope="col">
+                            Pro <br>
+                            <small class="text-muted">R$ 29/mês</small>
+                        </th>
+                        <th scope="col">
+                            Premium <br>
+                            <small class="text-muted">R$ 59/mês</small>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="text-start">
+                            <i class="bi bi-play-circle me-2"></i>
+                            Acesso aos cursos
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-start">
+                            <i class="bi bi-award me-2"></i>
+                            Certificado
+                        </td>
+                        <td>
+                            <i class="bi bi-x-circle text-danger"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-start">
+                            <i class="bi bi-chat-dots me-2"></i>
+                            Suporte ao aluno
+                        </td>
+                        <td>
+                            <span class="badge bg-secondary">Limitado</span>
+                        </td>
+                        <td>
+                            <span class="badge bg-primary">Padrão</span>
+                        </td>
+                        <td>
+                            <span class="badge bg-success">Prioritário</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-start">
+                            <i class="bi bi-clock-history me-2"></i>
+                            Acesso vitalício
+                        </td>
+                        <td>
+                            <i class="bi bi-x-circle text-danger"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-x-circle text-danger"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-start">
+                            <i class="bi bi-laptop me-2"></i>
+                            Projetos práticos
+                        </td>
+                        <td>
+                            <span class="text-muted">—</span>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                        <td>
+                            <i class="bi bi-check-circle text-success"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <input type="checkbox" id="modal-sucesso-toggle" class="d-none">
+    <section class="container my-5" id="cadastro">
+        <h2 class="fw-bold text-center mb-4">
+            Cadastre-se agora
+        </h2>
+
+        <form class="row g-4">
+
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome completo</label>
+                <input type="text" class="form-control is-valid" id="nome" placeholder="Digite seu nome">
+                <div class="form-text">
+                    Nome conforme documento oficial.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control is-invalid" id="email" placeholder="email@exemplo.com">
+                <div class="invalid-feedback">
+                    Informe um e-mail válido.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="usuario" class="form-label">Usuário</label>
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="usuario" placeholder="seuusuario">
+                </div>
+                <div class="form-text">
+                    Nome que aparecerá no seu perfil.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="col-md-6">
+                <label for="plano" class="form-label">Plano desejado</label>
+                <select class="form-select is-valid" id="plano">
+                    <option selected>Escolha um plano</option>
+                    <option>Básico</option>
+                    <option>Pro</option>
+                    <option>Premium</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label d-block">Nível de experiência</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="iniciante" checked>
+                    <label class="form-check-label" for="iniciante">
+                        Iniciante
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="intermediario">
+                    <label class="form-check-label" for="intermediario">
+                        Intermediário
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="avancado">
+                    <label class="form-check-label" for="avancado">
+                        Avançado
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input is-valid" type="checkbox" id="termos" checked>
+                    <label class="form-check-label" for="termos">
+                        Li e aceito os termos de uso
+                    </label>
+                </div>
+            </div>
+
+            <label for="modal-sucesso-toggle" class="col-6 mx-auto btn btn-primary" id="label-btn">
+                Cadastrar
+            </label>
+
+        </form>
+    </section>
+
+    <div
+        class="modal-sucesso position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <div class="modal-content-custom bg-white rounded shadow p-4 text-center">
+            <i class="bi bi-check-circle-fill text-success fs-1 mb-3"></i>
+
+            <h4 class="fw-bold mb-2">
+                Cadastro realizado com sucesso!
+            </h4>
+
+            <p class="text-muted mb-4">
+                Seu cadastro foi feito e você já pode acessar a área do aluno
+            </p>
+
+            <label for="modal-sucesso-toggle" class="btn btn-success px-4">
+                Entendi
+            </label>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light mt-5 pt-5" id="ft">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Pd Cursos</h5>
+                    <p class="small ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Impedit debitis ratione animi voluptatem earum ipsam esse 
+                        maxime ullam deserunt repellat itaque cupiditate accusantium.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-light fs-5">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Links rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none fast-links">Início</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#conteudo" class="text-decoration-none  fast-links">Cursos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#planos" class="text-decoration-none fast-links">Planos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="dashboard.html" class="text-decoration-none fast-links">Área do aluno</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Fale conosco</h5>
+
+                    <form class="row g-3" id="form">
+
+                        <div class="col-12">
+                            <label for="contatoNome" class="form-label">Nome</label>
+                            <input type="text" class="form-control is-valid" id="contatoNome"
+                                placeholder="Seu nome completo">
+                            <div class="form-text">
+                                Informe seu nome para contato.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="contatoEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control is-invalid" id="contatoEmail"
+                                placeholder="email@exemplo.com">
+                            <div class="invalid-feedback">
+                                Informe um e-mail válido.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="contatoAssunto" class="form-label">Assunto</label>
+                            <select class="form-select is-valid" id="contatoAssunto">
+                                <option selected>Selecione um assunto</option>
+                                <option>Dúvida sobre cursos</option>
+                                <option>Planos e pagamentos</option>
+                                <option>Suporte técnico</option>
+                                <option>Parcerias</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="contatoMensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="contatoMensagem" rows="3"
+                                placeholder="Escreva sua mensagem">
+                            </textarea>
+                        </div>
+
+                        <div class="col-12 d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                Enviar mensagem
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center small text-muted pb-3">
+                © 2026 Pd Cursos | Todos os direitos reservados
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>

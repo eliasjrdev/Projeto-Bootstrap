@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do aluno</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+
+            <aside class="col-lg-2 text-white d-none d-lg-flex flex-column p-3" id="sidebar-dashboard">
+                <h4 class="text-center mb-4">
+                    <i class="bi bi-code-slash"></i>
+                    Área do aluno
+                </h4>
+
+                <nav class="nav flex-column gap-2">
+                    <a href="#" class="nav-link text-white">
+                        <i class="bi bi-speedometer2 me-2"></i>
+                        Dashboard
+                    </a>
+                    <a href="#" class="nav-link text-white">
+                        <i class="bi bi-journal-code me-2"></i>
+                        Meus Cursos
+                    </a>
+                    <a href="#" class="nav-link text-white">
+                        <i class="bi bi-award me-2"></i>
+                        Certificados
+                    </a>
+                    <a href="#" class="nav-link text-white">
+                        <i class="bi bi-gear me-2"></i>
+                        Configurações
+                    </a>
+                </nav>
+
+                <div class="mt-auto text-center small text-muted">
+                    © 2026 Pd Cursos
+                </div>
+            </aside>
+
+            <main class="col-12 col-lg-10 p-4">
+
+                <div class="alert alert-success">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Parabéns! Você concluiu o curso de HTML & CSS.
+                </div>
+
+                <div class="alert alert-warning">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    Continue o curso de JavaScript para liberar o certificado.
+                </div>
+
+                <div class="row g-4 my-4">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="text-muted">Cursos Inscritos</h6>
+                                <h3 class="fw-bold">8</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="text-muted">Cursos Concluídos</h6>
+                                <h3 class="fw-bold text-success">3</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="text-muted">Em Progresso</h6>
+                                <h3 class="fw-bold text-warning">4</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="text-muted">Certificados</h6>
+                                <h3 class="fw-bold text-primary">2</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header fw-bold">
+                        Seu progresso
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0 dashboard-table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Curso</th>
+                                    <th>Nível</th>
+                                    <th>Status</th>
+                                    <th>Progresso</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>HTML & CSS</td>
+                                    <td><span class="badge bg-primary">Iniciante</span></td>
+                                    <td><span class="badge bg-success">Concluído</span></td>
+                                    <td>100%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td><span class="badge bg-warning text-dark">Novo</span></td>
+                                    <td><span class="badge bg-warning text-dark">Em andamento</span></td>
+                                    <td>60%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bootstrap 5</td>
+                                    <td><span class="badge bg-success">Popular</span></td>
+                                    <td><span class="badge bg-warning text-dark">Em andamento</span></td>
+                                    <td>40%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>React</td>
+                                    <td><span class="badge bg-danger">Avançado</span></td>
+                                    <td><span class="badge bg-secondary">Não iniciado</span></td>
+                                    <td>0%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

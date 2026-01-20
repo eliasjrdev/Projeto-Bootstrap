@@ -1,0 +1,12 @@
+.dashboard-table {
+    min-width: 650px;
+}
+
+#sidebar-dashboard{
+    background-color:#10101E;
+}
+
+.nav-link:hover{
+    color: #D7A61B !important;
+}
+
