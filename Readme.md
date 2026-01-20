@@ -42,61 +42,59 @@ Página da **Área do Aluno**.
 
 
 **Classes Flexbox:** 
-`d-flex:` Transforma o elemento em um contêiner flexível.
+- `d-flex:` Transforma o elemento em um contêiner flexível.
 
-`flex-column:` Alinha os elementos filhos em coluna (verticalmente).
+- `flex-column:` Alinha os elementos filhos em coluna (verticalmente).
 
-`justify-content-*:` Controla o alinhamento horizontal dos itens no eixo principal (center, between, start, end).
+- `justify-content-*:` Controla o alinhamento horizontal dos itens no eixo principal (center, between, start, end).
 
-`align-items-*:` Controla o alinhamento vertical dos itens no eixo cruzado (center, start, end).
+- `align-items-*:` Controla o alinhamento vertical dos itens no eixo cruzado (center, start, end).
 
 
 **Classe Navbar:**
-`navbar:` Classe base para criação de barras de navegação.
+- `navbar:` Classe base para criação de barras de navegação.
 
-`navbar-expand-lg:` Define que o menu será expandido a partir do breakpoint lg.
+- `navbar-expand-lg:` Define que o menu será expandido a partir do breakpoint lg.
 
-`navbar-dark:` Ajusta cores e contraste do menu para fundos escuros.
+- `navbar-dark:` Ajusta cores e contraste do menu para fundos escuros.
 
-`fixed-top:` Fixa a navbar no topo da página durante o scroll.
-
-
-- **Componentes:**  
-  `card:` Cria blocos de conteúdo estruturados, estruturas de cards de informações já completas.
-
-  `badge:` Cria badges (pequenos rótulos informativos) já prontos na página
-
-  `alert:` Exibe mensagens de aviso, sucesso ou atenção ao usuário.
-
-  `table:` Estiliza tabelas com o padrão visual do Bootstrap.
-
-  `table-responsive:` Permite rolagem horizontal da tabela em telas menores quando o conteúdo ultrapassa o container.
-
-  `form-control:` Estiliza formulários automaticamente. Campos de input, textarea, email e etc..
-
-  `form-select:` Estiliza campos do tipo select.
-
-  `form-check:` Estiliza checkboxes e radios.
-
-  `input-group:` Permite agrupar inputs com ícones ou textos auxiliares.
-
-  `btn:` Perimite usar botões já prontos do Bootstrap.
+- `fixed-top:` Fixa a navbar no topo da página durante o scroll.
 
 
-- **Classes utilitárias:**  
-  `text-center:` Usada para centralizar textos horizontalmente.
+**Componentes:**  
+- `card:` Cria blocos de conteúdo estruturados, estruturas de cards de informações já completas.
 
-  `fw-bold:` Aplica peso de fonte em negrito.
+- `badge:` Cria badges (pequenos rótulos informativos) já prontos na página
 
-  `shadow-sm:` Aplica uma leve sombra aos elementos.
+- `alert:` Exibe mensagens de aviso, sucesso ou atenção ao usuário.
 
-  `rounded:` Aplica cantos arredondados.
+- `table:` Estiliza tabelas com o padrão visual do Bootstrap.
 
-  `d-none:` Usada para ocultar um elemento da tela.
+- `table-responsive:` Permite rolagem horizontal da tabela em telas menores quando o conteúdo ultrapassa o container.
 
-  `img-fluid:` Torna imagens responsivas, ajustando automaticamente à largura do container.
+- `form-control:` Estiliza formulários automaticamente. Campos de input, textarea, email e etc..
 
----
+- `form-select:` Estiliza campos do tipo select.
+
+- `form-check:` Estiliza checkboxes e radios.
+
+- `input-group:` Permite agrupar inputs com ícones ou textos auxiliares.
+
+- `btn:` Perimite usar botões já prontos do Bootstrap.
+
+
+**Classes utilitárias:**  
+- `text-center:` Usada para centralizar textos horizontalmente.
+
+- `fw-bold:` Aplica peso de fonte em negrito.
+
+- `shadow-sm:` Aplica uma leve sombra aos elementos.
+
+- `rounded:` Aplica cantos arredondados.
+
+- `d-none:` Usada para ocultar um elemento da tela.
+
+- `img-fluid:` Torna imagens responsivas, ajustando automaticamente à largura do container.
 
 ## Uso de CSS Próprio
 
@@ -116,11 +114,11 @@ Foi necessário utilizar CSS personalizado nos seguintes casos:
 ## Principais Dificuldades
 
 - Criar interações (menu e modal) sem JavaScript.
-   - Nesta etapa eu não sabia como fazer isso sem Js então precisei pesquisar no Github dos meus colegas que já haviam feito essa atividade,
+   Nesta etapa eu não sabia como fazer isso sem Js então precisei pesquisar no Github dos meus colegas que já haviam feito essa atividade,
    para entender como eles fizeram, e adaptar para o meu projeto. Foi quando descobri a técnica de usar o Checkbox como gatilho.
 
 - Ajustar a tabela da dashboard no mobile. 
-  - A principio não estava aparecendo a rolagem lateral na tabela, passei um tempo tentando entender o porque disso estar acontecendo,
+  A principio não estava aparecendo a rolagem lateral na tabela, passei um tempo tentando entender o porque disso estar acontecendo,
   Só depois descobri que o problema era uma extensão do chrome que eu uso para simular o mobile, que não ativava a rolagem lateral mas na verdade ela
   já estava funcionando no navegador normalmente.
  
